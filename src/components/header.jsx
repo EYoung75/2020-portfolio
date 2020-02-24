@@ -14,11 +14,11 @@ const Header = () => {
           <li>Home</li>
         </Link>
         <Link
-          to="/works"
+          to="/work"
           className="header__navigation__link header__navigation__link-2"
           activeClassName="header__navigation__link--active"
         >
-          <li>Works</li>
+          <li>Work</li>
         </Link>
         <Link
           to="/about"
