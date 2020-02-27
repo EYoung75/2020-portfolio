@@ -1,6 +1,5 @@
 @import "../sass/mixins";
 
-
 *,
 *::after,
 *::before {
@@ -13,5 +12,15 @@ html {
   font-size: 62.5%;
   font-family: $primary-font;
   hyphens: auto;
-  background-color: white;
+
+  @include respond(desktop) {
+    padding: 2rem;
+    background-color: $gray-color-dark;
+
+    body {
+      border: solid $primary-color 2px;
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.7);
+      border-radius: 3px;
+    }
+  }
 }
