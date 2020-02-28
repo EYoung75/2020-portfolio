@@ -13,7 +13,12 @@ html {
   font-family: $primary-font;
   hyphens: auto;
 
+  @include respond(tab-port) {
+    font-size: 85%;
+  }
+
   @include respond(desktop) {
+    font-size: 95%;
     padding: 2rem;
     background-color: $gray-color-dark;
 

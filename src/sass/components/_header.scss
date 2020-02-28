@@ -1,39 +1,3 @@
-// .header {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
-//   padding: 2rem;
-//   background-color: $primary-color;
-
-//   &__logo {
-//     font-size: 3rem;
-//     color: white;
-//     border-bottom: solid 1px white;
-//     height: 4rem;
-//   }
-
-//   &__navigation {
-//     height: 12rem;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     list-style: none;
-//     text-align: right;
-
-//     &__link {
-//       color: white;
-//       text-decoration: none;
-//       font-size: 2.6rem;
-//       text-transform: uppercase;
-//       letter-spacing: 0.4rem;
-
-//       &:hover{
-
-//       }
-//     }
-//   }
-// }
-
 @import "../variables";
 
 .navigation {
@@ -130,7 +94,7 @@
         color: white;
         position: absolute;
         top: 30%;
-        right: 1rem;    
+        right: 1rem;
       }
 
       .nav-link {
@@ -147,7 +111,7 @@
           font-size: 1.6rem;
           letter-spacing: 0.4rem;
           text-align: right;
-          transition: transform .4s;
+          transition: transform 0.4s;
 
           &:hover {
             transform: scale(1.2) translateX(-1rem);
@@ -159,11 +123,7 @@
       .nav-link--active > li {
         width: 18rem;
         display: block;
-        background-image: linear-gradient(
-          125deg,
-          $primary-color
-          white 10%
-        );
+        background-image: linear-gradient(125deg, $primary-color white 10%);
         transform: scale(1.2) translate(-2rem);
         color: $primary-color;
         padding: 0.5rem;
@@ -173,7 +133,6 @@
         &:hover {
           transform: scale(1.2) translate(-2rem);
           text-shadow: 0rem 0rem 0rem rgba(black, 0);
-
         }
       }
 
@@ -200,17 +159,17 @@
     }
   }
 
-  @include respond(desktop) {
-    top: 5rem;
-    right: 6rem;
+  @include respond(tab-port) {
+    top: 3rem;
+    right: 3rem;
 
     .button-background {
-      top: 5rem;
-      right: 6rem;
+      top: 3rem;
+      right: 3rem;
 
       .button {
-        top: 7.5rem;
-        right: 7rem;
+        top: 5.5rem;
+        right: 4rem;
       }
     }
 
@@ -228,6 +187,157 @@
         top: 4rem;
         left: 4rem;
         font-size: 2.5rem;
+      }
+    }
+  }
+
+  @include respond(desktop) {
+    height: 4rem;
+    width: 4rem;
+    top: 5rem;
+    right: 5rem;
+
+    .button-background {
+      cursor: pointer;
+      height: 4rem;
+      width: 4rem;
+      top: 5rem;
+      right: 5rem;
+
+      .button {
+        top: 7rem;
+        right: 6rem;
+        &,
+        &::before,
+        &::after {
+          width: 2rem;
+          height: 2px;
+          background-color: white;
+          display: inline-block;
+        }
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+        }
+
+        &::before {
+          top: -0.6rem;
+        }
+        &::after {
+          top: 0.6rem;
+        }
+
+        &-close {
+          &::before {
+            width: 2.5rem;
+            top: 0;
+            transform: rotate(135deg);
+          }
+          &::after {
+            width: 2.5rem;
+            top: 0;
+            transform: rotate(-135deg);
+          }
+        }
+
+        &-close.button {
+          background-color: transparent;
+        }
+      }
+    }
+
+    &-open {
+      height: 100vh;
+      width: 100vw;
+      position: fixed;
+      top: 0;
+      right: 0;
+      border-radius: 0%;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+    .menu {
+      visibility: hidden;
+      height: 0;
+      width: 0;
+
+      &-open {
+        visibility: visible;
+        height: 100%;
+        width: 100%;
+        .nav-list {
+          list-style: none;
+          color: white;
+          position: absolute;
+          top: 30%;
+          right: 1rem;
+        }
+
+        .nav-link {
+          color: white;
+          background-color: transparent;
+          text-decoration: none;
+          text-align: right;
+          transform: translate(-50%, -50%);
+          transition: all 2s 0.2s;
+
+          li {
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            font-size: 1.6rem;
+            letter-spacing: 0.4rem;
+            text-align: right;
+            transition: transform 0.4s;
+
+            &:hover {
+              transform: scale(1.2) translateX(-1rem);
+              text-shadow: 0.5rem 1rem 2rem rgba(black, 1);
+            }
+          }
+        }
+
+        .nav-link--active > li {
+          width: 18rem;
+          display: block;
+          background-image: linear-gradient(125deg, $primary-color white 10%);
+          transform: scale(1.2) translate(-2rem);
+          color: $primary-color;
+          padding: 0.5rem;
+          border-radius: 3px;
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
+
+          &:hover {
+            transform: scale(1.2) translate(-2rem);
+            text-shadow: 0rem 0rem 0rem rgba(black, 0);
+          }
+        }
+
+        &__footer {
+          position: absolute;
+          bottom: 9rem;
+          right: 3rem;
+          a {
+            color: white;
+            font-size: 3rem;
+            margin-right: 2rem;
+          }
+        }
+
+        &__heading {
+          position: absolute;
+          text-align: left;
+          top: 2rem;
+          left: 2rem;
+          text-decoration: none;
+          color: white;
+          font-size: 2rem;
+        }
       }
     }
   }
