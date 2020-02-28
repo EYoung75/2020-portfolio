@@ -1,0 +1,15 @@
+.footer {
+    height: 10vh;
+    width: 100%;
+    background-color: $primary-color;
+    border-top: solid white 1px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+        color: white;
+        margin-right: 2rem;
+    }
+}
