@@ -5,6 +5,7 @@
   flex-direction: column;
   background-color: $primary-color;
   overflow: hidden;
+  align-items: center;
 
   &__title {
     margin: 5rem;
@@ -12,7 +13,7 @@
     font-family: $secondary-font;
     text-transform: uppercase;
     font-size: 3rem;
-  }
+  } 
   &__projects {
     width: 100%;
     display: flex;
@@ -22,6 +23,8 @@
     flex-wrap: wrap;
   }
   @include respond(tab-port) {
+      text-align: left;
+
       .work__projects {
       }
   }

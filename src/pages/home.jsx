@@ -18,7 +18,7 @@ const Home = () => {
           <div className="home__hero__banner">
             <h2>Web Developer {"&"} avid adventurer</h2>
             <p>
-              Focused on creating unique and engaging user experiences and
+              Passionate about creating unique and engaging user experiences and
               elegant coding solutions
             </p>
           </div>
