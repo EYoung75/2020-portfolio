@@ -24,10 +24,10 @@ const Home = () => {
           </div>
           <div className="home__hero__banner__scroll">&darr;</div>
           <div className="home__hero__footer">
-            <FaGithubAlt />
-            <FaLinkedin />
-            <FaEnvelope />
-            <FaCameraRetro />
+            <a href="https://github.com/EYoung75/" target="_blank"><FaGithubAlt /></a>
+            <a href="https://www.linkedin.com/in/evanyoung4/" target="_blank"><FaLinkedin /></a>
+            <a href="mailto:young.evanj@gmail.com" target="_top"><FaEnvelope /></a>
+            <a href="https://vsco.co/evanyoung75/gallery" target="_blank"><FaCameraRetro /></a>
           </div>
         </div>
       </div>

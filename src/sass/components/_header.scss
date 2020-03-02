@@ -121,10 +121,10 @@
       }
 
       .nav-link--active > li {
-        width: 18rem;
+        width: 13rem;
         display: block;
-        background-image: linear-gradient(125deg, $primary-color white 10%);
         transform: scale(1.2) translate(-2rem);
+        background-color: $secondary-color;
         color: $primary-color;
         padding: 0.5rem;
         border-radius: 3px;
@@ -154,7 +154,8 @@
         left: 2rem;
         text-decoration: none;
         color: white;
-        font-size: 2rem;
+        font-family: $secondary-font;
+        font-size: 4rem;
       }
     }
   }
@@ -336,7 +337,7 @@
           left: 2rem;
           text-decoration: none;
           color: white;
-          font-size: 2rem;
+          font-size: 5rem;
         }
       }
     }

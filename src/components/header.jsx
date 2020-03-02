@@ -16,33 +16,6 @@ class Header extends React.Component {
 
   render() {
     return (
-      // <nav className="header">
-      //   <h2 className="header__logo">EY20'</h2>
-        // <ul className="header__navigation">
-        //   <Link
-        //     to="/"
-        //     exact
-        //     className="header__navigation__link header__navigation__link-1"
-        //     activeClassName="header__navigation__link--active"
-        //   >
-        //     <li>Home</li>
-        //   </Link>
-        //   <Link
-        //     to="/work"
-        //     className="header__navigation__link header__navigation__link-2"
-        //     activeClassName="header__navigation__link--active"
-        //   >
-        //     <li>Work</li>
-        //   </Link>
-        //   <Link
-        //     to="/about"
-        //     className="header__navigation__link header__navigation__link-3"
-        //     activeClassName="header__navigation__link--active"
-        //   >
-        //     <li>About</li>
-        //   </Link>
-        // </ul>
-      // </nav>
       <nav
         className={"navigation " + (this.state.open ? "navigation-open" : "")}
       >
@@ -50,7 +23,45 @@ class Header extends React.Component {
           <div
             className={this.state.open ? "button button-close" : "button"}
           ></div>
-          
+        </div>
+        <div className={"menu " + (this.state.open ? "menu-open" : "")}>
+          <Link
+            className="nav-link"
+            activeClassName="nav-link--active"
+            to="/"
+            onClick={this.toggleNav}
+          >
+            <h2 className="menu-open__heading">
+              EY '20
+            </h2>
+          </Link>
+          <ul className="nav-list">
+            <NavLink
+              className="nav-link"
+              activeClassName="nav-link--active"
+              to="/"
+              exact
+              onClick={this.toggleNav}
+            >
+              <li>Home</li>
+            </NavLink>
+            <NavLink
+              className="nav-link"
+              activeClassName="nav-link--active"
+              to="/about"
+              onClick={this.toggleNav}
+            >
+              <li>About</li>
+            </NavLink>
+            <NavLink
+              className="nav-link"
+              activeClassName="nav-link--active"
+              to="/contact"
+              onClick={this.toggleNav}
+            >
+              <li>Contact</li>
+            </NavLink>
+          </ul>
         </div>
       </nav>
     );
