@@ -15,7 +15,7 @@
         rgba(transparent, 0) 20%,
         rgba(black, 0.4)
       ),
-      url(("../../assets/bg.jpg"));
+      url("../../assets/bg-small.jpg");
     background-size: cover;
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
@@ -29,7 +29,7 @@
       margin-right: 10rem;
       color: white;
       text-shadow: 0.5rem 0.5rem 1rem rgba(black, 1);
-      font-size: 4rem;
+      font-size: $header-font-size + 1rem;
       text-transform: uppercase;
       letter-spacing: 0.2rem;
     }
@@ -58,6 +58,7 @@
         font-family: $secondary-font;
         -webkit-animation: bounce 5s infinite;
         animation: bounce 5s infinite;
+        padding: 1rem;
       }
     }
 
@@ -73,11 +74,9 @@
     50% {
       transform: translateY(4rem);
       color: $secondary-color;
-
     }
     100% {
       transform: translateY(0rem);
-
     }
   }
 
@@ -87,11 +86,9 @@
     }
     50% {
       transform: translateY(4rem);
-
     }
     100% {
       transform: translateY(0rem);
-
     }
   }
 
@@ -104,7 +101,7 @@
           rgba(transparent, 0),
           rgba(black, 0.5)
         ),
-        url(("../../assets/bg.jpg"));
+        url(("../../assets/bg-big.jpg"));
       background-size: cover;
       background-position: center;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
