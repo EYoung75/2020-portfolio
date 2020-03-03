@@ -60,17 +60,12 @@ class Header extends React.Component {
               <li>Contact</li>
             </NavLink>
           </ul>
-          {/* <div
+          <div
             className={"nav-quote " + (this.state.open ? "nav-quote-open" : "")}
           >
-            <p>
-              Hello this is a quote Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Vero, libero provident officia laudantium
-              corporis a, repellat et perferendis asperiores quis quos nam?
-              Maxime delectus numquam at itaque tempora accusantium
-              necessitatibus?
-            </p>
-          </div> */}
+            The thing about coding is sometimes you don't know why it be like
+            that, but it do
+          </div>
         </div>
       </nav>
     );

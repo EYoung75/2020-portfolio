@@ -29,6 +29,8 @@
     // box-shadow: 0 .5rem 1rem rgba(black, .5);
     background-image: url("../../assets/me-small.jpg");
     background-size: cover;
+    background-position: center;
+   
   }
 
   p {
@@ -59,8 +61,8 @@
 
   @include respond(desktop) {
     &__container {
-      flex-direction: row;
       align-content: center;
+      flex-direction: row;
       width: 80%;
       background-color: $gray-color-light;
       border-radius: 3px;
@@ -72,10 +74,15 @@
       background-image: url("../../assets/me-big.jpg");
       background-position: center;
       height: 35rem;
-      width: 50%;
+      width: 40%;
+      transition: all 2s;
+
+    //   &:hover {
+    //     filter: invert(100%);
+    //   }
     }
     &__bio {
-      width: 50%;
+        width: 60%;
     }
   }
 }
