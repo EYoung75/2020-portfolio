@@ -22,6 +22,21 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  &__link {
+    color: white;
+    font-family: $secondary-font;
+    text-decoration: none;
+    font-size: 3rem;
+    transition: all .3s;
+
+    &:hover {
+      color: $secondary-color;
+      text-shadow: 0 1rem 1rem rgba(black, .7);
+      transform: scale(1.1);
+
+    }
+  }
   @include respond(tab-port) {
       text-align: left;
 

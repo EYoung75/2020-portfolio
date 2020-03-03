@@ -19,10 +19,10 @@ const Home = () => {
             <h2>Web Developer {"&"} avid adventurer</h2>
             <p>
               Passionate about creating unique and engaging user experiences and
-              elegant coding solutions
+              crafting elegant coding solutions
             </p>
           </div>
-          <div className="home__hero__banner__scroll">&darr;</div>
+          <div className="home__hero__banner__scroll"><p>scroll</p>&darr;</div>
           <div className="home__hero__footer">
             <a href="https://github.com/EYoung75/" target="_blank"><FaGithubAlt /></a>
             <a href="https://www.linkedin.com/in/evanyoung4/" target="_blank"><FaLinkedin /></a>

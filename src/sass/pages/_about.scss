@@ -1,11 +1,62 @@
 .about {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: $primary-color;
-    color: $secondary-color;
-  
+    padding: 10rem 0;
+
+    h1 {
+        color: white;
+        font-family: $secondary-font;
+        font-size: 4rem;
+        text-align: left;
+    }
+
+
+    &__container {
+        margin: 2rem;
+        background-color: $gray-color-light;
+        padding: 3rem;
+        border-radius: 3px;
+        box-shadow: 0 1rem 1rem rgba(black, .8);
+        margin-bottom: 10rem;
+        border: solid 2px $secondary-color;
+    }
+    &__pic {
+        border-radius: 3px;
+        box-shadow: 0 .5rem 1rem rgba(black, .5);
+        width: 100%;
+    }
+
+    p {
+        text-align: center;
+        hyphens: none;
+        margin: 1rem;
+        text-indent: 2rem;
+    }
+
+    @include respond(tab-port) {
+        &__container {
+            width: 50%;
+            background-color: $gray-color-light;
+            padding: 3rem;
+            border-radius: 3px;
+            box-shadow: 0 1rem 1rem rgba(black, .8);
+            margin-bottom: 10rem;
+            border: solid 2px $secondary-color;
+        }
+        &__pic {
+            border-radius: 3px;
+            box-shadow: 0 .5rem 1rem rgba(black, .5);
+            width: 100%;
+        }
+    
+        p {
+            text-align: center;
+            hyphens: none;
+            margin: 1rem;
+            text-indent: 2rem;
+        }
+    }
 }

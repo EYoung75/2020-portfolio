@@ -102,7 +102,6 @@
         background-color: transparent;
         text-decoration: none;
         text-align: right;
-        transform: translate(-50%, -50%);
         transition: all 2s 0.2s;
 
         li {
@@ -111,28 +110,39 @@
           font-size: 1.6rem;
           letter-spacing: 0.4rem;
           text-align: right;
-          transition: transform 0.4s;
-
-          &:hover {
-            transform: scale(1.2) translateX(-1rem);
-            text-shadow: 0.5rem 1rem 2rem rgba(black, 1);
-          }
+          transition: all 0.4s;
+          color: white;
         }
       }
 
       .nav-link--active > li {
         width: 13rem;
         display: block;
-        transform: scale(1.2) translate(-2rem);
         background-color: $secondary-color;
         color: $primary-color;
         padding: 0.5rem;
         border-radius: 3px;
         box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
+        border: solid $primary-color 2px;
+      }
 
-        &:hover {
-          transform: scale(1.2) translate(-2rem);
-          text-shadow: 0rem 0rem 0rem rgba(black, 0);
+      .nav-quote {
+        visibility: hidden;
+        position: absolute;
+        bottom: 10rem;
+        transition: all 1s 0.3s;
+        &-open {
+          visibility: visible;
+
+          p {
+            color: transparent;
+            transition: all 4s 0.3s;
+          }
+        }
+
+        p {
+          color: white;
+          padding: 0 10rem;
         }
       }
 
@@ -297,8 +307,9 @@
             transition: transform 0.4s;
 
             &:hover {
-              transform: scale(1.2) translateX(-1rem);
+              transform: scale(1.2) translateX(-1.5rem);
               text-shadow: 0.5rem 1rem 2rem rgba(black, 1);
+              color: $secondary-color;
             }
           }
         }
@@ -316,6 +327,7 @@
           &:hover {
             transform: scale(1.2) translate(-2rem);
             text-shadow: 0rem 0rem 0rem rgba(black, 0);
+            color: $primary-color;
           }
         }
 

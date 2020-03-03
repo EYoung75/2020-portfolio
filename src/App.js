@@ -6,15 +6,18 @@ import Header from "./components/header.jsx";
 import About from "./pages/about.jsx";
 import Work from "./pages/work.jsx";
 import Footer from "./components/footer.jsx";
+import Contact from "./pages/contact.jsx";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/work" exact component={Work} />
         <Route path="/about" exact component={About} />
+        <Route path="/contact" exact component={Contact} />
+
+
       </Switch>
       <Footer/>
     </div>

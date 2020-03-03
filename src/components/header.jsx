@@ -31,9 +31,7 @@ class Header extends React.Component {
             to="/"
             onClick={this.toggleNav}
           >
-            <h2 className="menu-open__heading">
-              EY '20
-            </h2>
+            <h2 className="menu-open__heading">EY '20</h2>
           </Link>
           <ul className="nav-list">
             <NavLink
@@ -62,6 +60,17 @@ class Header extends React.Component {
               <li>Contact</li>
             </NavLink>
           </ul>
+          {/* <div
+            className={"nav-quote " + (this.state.open ? "nav-quote-open" : "")}
+          >
+            <p>
+              Hello this is a quote Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Vero, libero provident officia laudantium
+              corporis a, repellat et perferendis asperiores quis quos nam?
+              Maxime delectus numquam at itaque tempora accusantium
+              necessitatibus?
+            </p>
+          </div> */}
         </div>
       </nav>
     );

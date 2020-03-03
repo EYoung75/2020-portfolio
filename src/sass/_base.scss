@@ -13,6 +13,17 @@ html {
   font-family: $primary-font;
   hyphens: auto;
 
+
+  .logo {
+    font-size: 4rem;
+    color: white;
+    font-family: $secondary-font;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    text-decoration: none;
+  }
+
   @include respond(tab-port) {
     font-size: 85%;
   }
@@ -26,6 +37,11 @@ html {
       border: solid $primary-color 2px;
       box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.7);
       border-radius: 3px;
+    }
+
+    .logo {
+      top: 4rem;
+      left: 4rem;
     }
   }
 }
