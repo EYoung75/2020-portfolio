@@ -13,7 +13,8 @@
     text-align: left;
   }
 
-  &__container {
+
+  &__bio {
     display: flex;
     flex-direction: column;
     margin: 2rem;
@@ -23,26 +24,17 @@
     margin-bottom: 10rem;
     border: solid 2px $secondary-color;
   }
-  &__pic {
-    height: 20rem;
-    width: 100%;
-    // box-shadow: 0 .5rem 1rem rgba(black, .5);
-    background-image: url("../../assets/me-small.jpg");
-    background-size: cover;
-    background-position: center;
-   
-  }
 
   p {
     text-align: right;
     hyphens: none;
-    margin: 2rem;
+    margin: 1rem 2rem;
     text-indent: 2rem;
     font-size: $default-font-size;
   }
 
   @include respond(tab-port) {
-    &__container {
+    &__bio {
       width: 70%;
       background-color: $gray-color-light;
       border-radius: 3px;
@@ -50,39 +42,20 @@
       margin-bottom: 10rem;
       border: solid 2px $secondary-color;
     }
-    &__pic {
-      background-image: url("../../assets/me-big.jpg");
-      height: 25rem;
-    }
+
     p {
       text-align: center;
     }
   }
 
   @include respond(desktop) {
-    &__container {
-      align-content: center;
-      flex-direction: row;
+    &__bio {
       width: 80%;
       background-color: $gray-color-light;
       border-radius: 3px;
       box-shadow: 0 1rem 1rem rgba(black, 0.8);
       margin-bottom: 10rem;
       border: solid 2px $secondary-color;
-    }
-    &__pic {
-      background-image: url("../../assets/me-big.jpg");
-      background-position: center;
-      height: 35rem;
-      width: 40%;
-      transition: all 2s;
-
-    //   &:hover {
-    //     filter: invert(100%);
-    //   }
-    }
-    &__bio {
-        width: 60%;
     }
   }
 }

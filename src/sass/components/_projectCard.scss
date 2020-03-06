@@ -5,10 +5,11 @@
   border-radius: 5px;
   box-shadow: 0 1rem 1rem rgba(black, 0.8);
   margin-bottom: 5rem;
+  border: solid $secondary-color 2px;
 
   &__title {
     padding: 1rem;
-    border-bottom: solid $gray-color-dark 2px;
+    border-bottom: solid $secondary-color 2px;
 
     h3 {
       font-size: 2rem;

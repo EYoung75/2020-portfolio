@@ -12,9 +12,13 @@ const ProjectCard = props => {
         <img src={project.img} />
       </div>
       <div className="project__links">
-        <a href={project.github} target="_blank">
-          <FaGithubAlt /> {"<Code/>"}
-        </a>
+        {project.github === "" ? (
+          ""
+        ) : (
+          <a href={project.github} target="_blank">
+            <FaGithubAlt /> {"<Code/>"}
+          </a>
+        )}
         {project.live === "" ? (
           ""
         ) : (
