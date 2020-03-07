@@ -63,8 +63,7 @@ class Header extends React.Component {
           <div
             className={"nav-quote " + (this.state.open ? "nav-quote-open" : "")}
           >
-            The thing about coding is sometimes you don't know why it be like
-            that, but it do
+            *Inspirational quote* (This isn't a placeholder)
           </div>
         </div>
       </nav>

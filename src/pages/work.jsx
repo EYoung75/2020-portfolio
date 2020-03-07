@@ -33,13 +33,6 @@ const Work = () => {
       github: "",
       live: "",
     }
-    // {
-    //   name: "Something else",
-    //   img: require("../assets/movie-reviews.gif"),
-    //   description: "",
-    //   github: "",
-    //   live: ""
-    // }
   ];
   return (
     <div className="work">
