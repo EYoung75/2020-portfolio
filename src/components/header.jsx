@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
-import { FaFacebookSquare, FaGooglePlusSquare } from "react-icons/fa";
+// import { FaFacebookSquare, FaGooglePlusSquare } from "react-icons/fa";
 
 class Header extends React.Component {
   constructor() {

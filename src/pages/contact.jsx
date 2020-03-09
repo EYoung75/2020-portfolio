@@ -1,6 +1,6 @@
 import React from "react";
 import { FaPaperPlane } from "react-icons/fa";
-import Logo from "../components/logo.jsx";
+// import Logo from "../components/logo.jsx";
 
 const Contact = () => {
   return (

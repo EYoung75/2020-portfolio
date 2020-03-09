@@ -1,5 +1,6 @@
 import React from "react";
-import Logo from "../components/logo.jsx";
+// import Logo from "../components/logo.jsx";
+
 const About = () => {
   return (
     <div className="about">

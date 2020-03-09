@@ -10,16 +10,16 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__left">
-        <a href="https://github.com/EYoung75/" target="_blank">
+        <a href="https://github.com/EYoung75/" target="_blank" rel="noopener noreferrer">
           <FaGithubAlt />
         </a>
-        <a href="https://www.linkedin.com/in/evanyoung4/" target="_blank">
+        <a href="https://www.linkedin.com/in/evanyoung4/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
         </a>
         <a href="mailto:young.evanj@gmail.com" target="_top">
           <FaEnvelope />
         </a>
-        <a href="https://vsco.co/evanyoung75/gallery" target="_blank">
+        <a href="https://vsco.co/evanyoung75/gallery" target="_blank" rel="noopener noreferrer">
           <FaCameraRetro />
         </a>
       </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectCard from "../components/projectCard.jsx";
-import { Link } from "react-router-dom";
 
 const Work = () => {
   const projects = [
@@ -39,7 +38,7 @@ const Work = () => {
       <h2 className="work__title">Latest Projects:</h2>
       <div className="work__projects">
         {projects.map(project => (
-          <ProjectCard props={project} id={project} />
+          <ProjectCard props={project} key={project.name} />
         ))}
       </div>
       {/* <Link to="/about" className="work__link">About Me &rarr;</Link> */}

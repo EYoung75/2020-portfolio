@@ -9,20 +9,20 @@ const ProjectCard = props => {
         <h3>{project.name}</h3>
       </div>
       <div className="project__preview">
-        <img src={project.img} />
+        <img src={project.img} alt={project.name + " preview"}/>
       </div>
       <div className="project__links">
         {project.github === "" ? (
           ""
         ) : (
-          <a href={project.github} target="_blank">
+          <a href={project.github} target="_blank" rel="noopener noreferrer">
             <FaGithubAlt /> {"<Code/>"}
           </a>
         )}
         {project.live === "" ? (
           ""
         ) : (
-          <a href={project.live} target="_blank">
+          <a href={project.live} target="_blank" rel="noopener noreferrer">
             <FaGlobe /> Live Site
           </a>
         )}

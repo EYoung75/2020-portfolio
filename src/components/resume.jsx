@@ -4,6 +4,7 @@ const Resume = () => {
   return (
     <div className="resume-container">
       <iframe
+      title="EvanYoungResume"
         src="https://resume.creddle.io/embed/3rwzxe9ii4o"
         width="850"
         height="1100"
@@ -14,6 +15,7 @@ const Resume = () => {
         href="https://resume.creddle.io/resume/3rwzxe9ii4o"
         target="_blank"
         className="resume-button"
+        rel="noopener noreferrer"
       >
         View Resume
       </a>
