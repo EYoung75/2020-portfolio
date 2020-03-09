@@ -15,7 +15,7 @@
         rgba(transparent, 0) 20%,
         rgba(black, 0.4)
       ),
-      url("../../assets/bg-small.jpg");
+      url("../../assets/bg.jpg");
     background-size: cover;
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
@@ -95,13 +95,7 @@
   @include respond(tab-port) {
     &__hero {
       height: 100vh;
-      background-image: linear-gradient(
-          to right bottom,
-          rgba(black, 0.5),
-          rgba(transparent, 0),
-          rgba(black, 0.5)
-        ),
-        url(("../../assets/bg-big.jpg"));
+  
       background-size: cover;
       background-position: center;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
