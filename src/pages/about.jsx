@@ -3,7 +3,7 @@ import Logo from "../components/logo.jsx";
 const About = () => {
   return (
     <div className="about">
-      <Logo />
+      {/* <Logo /> */}
       <h1>About</h1>
       <div className="about__bio">
         <p>I'm a web developer and recent Kansas City transplant.</p>

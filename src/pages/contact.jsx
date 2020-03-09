@@ -5,7 +5,7 @@ import Logo from "../components/logo.jsx";
 const Contact = () => {
   return (
     <div className="contact">
-      <Logo />
+      {/* <Logo /> */}
       <h1>Drop a line:</h1>
       <form name="contact" method="POST" className="contact__form">
         <input type="hidden" name="form-name" value="contact" />

@@ -10,7 +10,7 @@ import Contact from "./pages/contact.jsx";
 function App() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Switch>
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />

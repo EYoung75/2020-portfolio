@@ -1,0 +1,34 @@
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: $primary-color;
+    padding: 5rem 0;
+}
+
+.resume {
+    display: none;
+
+    @include respond(desktop) {
+        display: inline;
+    }
+}
+
+.resume-button {
+    display: inline-flex;
+    color: $primary-color;
+    text-decoration: none;
+    font-family: $secondary-font;
+    font-size: 3rem;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    border: solid $secondary-color 2px;
+    box-shadow: 0 1rem 1rem rgba(black, .8);
+
+    @include respond(desktop) {
+        display: none;
+    }
+}

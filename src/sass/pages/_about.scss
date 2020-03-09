@@ -51,6 +51,7 @@
   @include respond(desktop) {
     &__bio {
       width: 80%;
+      padding: 5rem;
       background-color: $gray-color-light;
       border-radius: 3px;
       box-shadow: 0 1rem 1rem rgba(black, 0.8);

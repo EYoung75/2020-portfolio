@@ -42,7 +42,7 @@ const Work = () => {
           <ProjectCard props={project} id={project} />
         ))}
       </div>
-      <Link to="/about" className="work__link">About Me &rarr;</Link>
+      {/* <Link to="/about" className="work__link">About Me &rarr;</Link> */}
     </div>
   );
 };

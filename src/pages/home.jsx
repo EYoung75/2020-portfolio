@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
   FaGithubAlt,
   FaLinkedin,
@@ -8,21 +7,16 @@ import {
 } from "react-icons/fa";
 import "./work.jsx";
 import Work from "./work.jsx";
+import About from "./about.jsx";
+import Contact from "./contact.jsx";
+import Resume from "../components/resume.jsx";
+
 
 const Home = () => {
   return (
     <div>
       <div className="home">
         <div className="home__hero">
-          {/* <img
-            srcset={`
-            ${require("../assets/bg-small.jpg")} 1x, 
-            ${require("../assets/bg-big.jpg")} 2x
-          `}
-            sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 33vw"
-            src={require("../assets/bg-big.jpg")}
-            alt="Landing"
-          /> */}
           <h1 className="home__hero__title">Evan Young</h1>
           <div className="home__hero__banner">
             <h2>Web Developer {"&"} avid adventurer</h2>
@@ -50,6 +44,9 @@ const Home = () => {
         </div>
       </div>
       <Work />
+      <About/>
+      <Resume/>
+      <Contact/>
     </div>
   );
 };
