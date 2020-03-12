@@ -16,7 +16,7 @@ const Resume = () => {
         target="_blank"
         className="resume-button"
         rel="noopener noreferrer"
-      >
+      > 
         View Resume
       </a>
     </div>
