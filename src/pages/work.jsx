@@ -19,12 +19,19 @@ const Work = () => {
       live: ""
     },
     {
-      name: "Movie Reviews",
-      img: require("../assets/movie-reviews.gif"),
-      description: "A full CRUD React app that allows users to review movies. Utilizes a back-end created using Express.js and PostgreSQL.",
-      github: "https://github.com/EYoung75/movie-reviews",
-      live: "http://roomy-apparatus.surge.sh/"
+      name: "WatchList",
+      img: require("../assets/watchlist.gif"),
+      description: "A React app that consumes TMDB's Movies and TV API to render details for thousands of movies and tv shows. Designed with a 'mobile first' approach.",
+      github: "https://github.com/EYoung75/watchlist",
+      live: "https://movieswatchlister.surge.sh/"
     },
+    // {
+    //   name: "Movie Reviews",
+    //   img: require("../assets/movie-reviews.gif"),
+    //   description: "A full CRUD React app that allows users to review movies. Utilizes a back-end created using Express.js and PostgreSQL.",
+    //   github: "https://github.com/EYoung75/movie-reviews",
+    //   live: "http://roomy-apparatus.surge.sh/"
+    // },
     {
       name: "Misc. Sites",
       img: require("../assets/misc.gif"),
