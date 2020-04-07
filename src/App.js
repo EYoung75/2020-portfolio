@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./main.scss";
 import Home from "./pages/home.jsx";
 import { Switch, Route } from "react-router-dom";
@@ -6,8 +6,13 @@ import { Switch, Route } from "react-router-dom";
 import About from "./pages/about.jsx";
 import Footer from "./components/footer.jsx";
 import Contact from "./pages/contact.jsx";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div>
       {/* <Header /> */}
@@ -17,7 +22,7 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="*" component={Home} />
       </Switch>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

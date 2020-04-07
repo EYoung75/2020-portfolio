@@ -4,7 +4,7 @@ import { FaGithubAlt, FaGlobe } from "react-icons/fa";
 const ProjectCard = props => {
   let project = props.props;
   return (
-    <div className="project">
+    <div className="project" data-aos="flip-down" data-aos-offset="200" data-aos-duration="1600">
       <div className="project__title">
         <h3>{project.name}</h3>
       </div>
