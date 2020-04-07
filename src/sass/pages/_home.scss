@@ -24,6 +24,7 @@
     align-content: center;
     justify-content: space-between;
     &__title {
+      hyphens: none;
       font-family: $secondary-font;
       margin: 1rem 2rem;
       margin-right: 10rem;

@@ -24,9 +24,9 @@ const Home = () => {
               With a passion for crafting engaging user experiences and coding solutions
             </p>
           </div>
-          <div className="home__hero__banner__scroll">
+          {/* <div className="home__hero__banner__scroll">
             <p>scroll</p>&darr;
-          </div>
+          </div> */}
           <div className="home__hero__footer">
             <a href="https://github.com/EYoung75/" target="_blank" rel="noopener noreferrer">
               <FaGithubAlt />
