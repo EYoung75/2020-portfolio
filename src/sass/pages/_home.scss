@@ -24,7 +24,6 @@
     align-content: center;
     justify-content: space-between;
     &__title {
-      hyphens: none;
       font-family: $secondary-font;
       margin: 1rem 2rem;
       margin-right: 10rem;
@@ -41,6 +40,7 @@
       font-size: 150%;
       color: white;
       padding: 3rem 3rem;
+      hyphens: none;
 
       h2 {
         text-transform: uppercase;
