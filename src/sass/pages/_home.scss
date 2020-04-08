@@ -49,11 +49,16 @@
         text-transform: uppercase;
       }
 
+      hr {
+        background-color: white;
+        height: 0.1rem;
+        border: none;
+        
+      }
+
       p {
         font-style: italic;
       }
-
-    
 
       & > * {
         margin: 1rem;
@@ -144,8 +149,14 @@
   }
 
   @include respond(desktop) {
-    &__hero__banner > p{
-      margin-left: 5rem;
+    &__hero__banner {
+      p {
+        margin-left: 5rem;
+      }
+      hr {
+        width: 50%;
+        margin-left: 3rem;
+      }
     }
   }
 }
