@@ -9,10 +9,15 @@ import Contact from "./pages/contact.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
 function App() {
+
   useEffect(() => {
+    const loader = document.querySelector(".loader-container");
+    loader.parentElement.removeChild(loader);
     AOS.init();
   }, []);
+
   return (
     <div>
       {/* <Header /> */}

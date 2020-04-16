@@ -44,4 +44,36 @@ html {
       left: 4rem;
     }
   }
+
+  .loader-container {
+    background-color: $primary-color;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 999;
+  }
+  
+  .loader {
+    position: absolute;
+    top: calc(50% - 4em);
+    left: calc(50% - 4em);
+    width: 6em;
+    height: 6em;
+    border: 5px solid $secondary-color;
+    animation: load 1.1s infinite linear;
+    transition: opacity 0.3s;
+  }
+
+  .loader--hide {
+    display: none;
+  }
+  
+  @keyframes load {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }

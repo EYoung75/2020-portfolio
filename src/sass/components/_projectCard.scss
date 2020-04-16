@@ -65,12 +65,7 @@
   }
 
   @include respond(desktop) {
-    width: 40%;
-    filter: blur(1px) brightness(50%);
-    transition: all .3s;
-
-    &:hover {
-      filter: blur(0px);
-    }
+    width: 35%;
+    transition: all 0.3s;
   }
 }
