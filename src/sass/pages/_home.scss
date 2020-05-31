@@ -7,7 +7,7 @@
   align-items: center;
 
   &__hero {
-    height: 85%;
+    height: 100vh;
     width: 100%;
     background-image: linear-gradient(
         to bottom,
@@ -18,7 +18,7 @@
       url("../../assets/bg.jpg");
     background-size: cover;
     background-position: center;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    // clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -78,7 +78,25 @@
     }
 
     &__footer {
-      visibility: hidden;
+      // visibility: hidden;
+      display: inline-flex;
+      visibility: visible;
+      font-size: 300%;
+      align-self: flex-end;
+      margin: 1rem;
+      a {
+        color: white;
+      }
+
+      & > * {
+        margin: 0.5rem;
+        transition: all 0.3s;
+        &:hover {
+          transform: scale(1.2) translateY(-0.5rem);
+          cursor: pointer;
+          color: $primary-color;
+        }
+      }
     }
   }
 
