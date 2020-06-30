@@ -7,7 +7,7 @@ const Work = () => {
       name: "PicPost",
       img: require("../assets/picpost.gif"),
       description:
-        "A picture posting social media platform built using Flutter with multiple Firebase services on the backend and utilizing Cloud Firestore as the database. Offers full CRUD functionality for posts and user profiles and the ability to follow other users and like/comment on their posts",
+        "A picture posting social media platform built using Flutter with multiple Firebase services on the backend and utilizing Cloud Firestore as the database. Offers full CRUD functionality for posts and user profiles and the ability to follow other users and like/comment on their posts.",
       github: "https://github.com/EYoung75/flutter-random",
       live: "",
     },
