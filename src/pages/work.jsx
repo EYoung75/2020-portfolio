@@ -4,26 +4,28 @@ import ProjectCard from "../components/projectCard.jsx";
 const Work = () => {
   const projects = [
     {
-      name: "OneCard",
-      img: require("../assets/onecard.gif"),
+      name: "PicPost",
+      img: require("../assets/picpost.gif"),
       description:
-        "A 'Virtual Business Card' sharing app built using Flutter and implementing user-authentication and various Firebase services on the backend. Revolves around the user specific functionality of creating a virtual business card and scanning QR codes to share and add to a virtual wallet. Implements full CRUD functionality.",
-      github: "https://github.com/EYoung75/flutter_oneCard",
-      live: ""
+        "A picture posting social media platform built using Flutter with multiple Firebase services on the backend and utilizing Cloud Firestore as the database. Offers full CRUD functionality for posts and user profiles and the ability to follow other users and like/comment on their posts",
+      github: "https://github.com/EYoung75/flutter-random",
+      live: "",
     },
     {
       name: "PinPoint",
       img: require("../assets/pinpoint.gif"),
-      description: "A Flutter place searching application allowing users to search and view details for hot spots and places of interest around them. Provides streamlined data populated from Google's Places and Maps API in conjunction with Yelp's API for review data.",
+      description:
+        "A Flutter place searching application allowing users to search and view details for hot spots and places of interest around them. Provides streamlined data populated from Google's Places and Maps API in conjunction with Yelp's API for review data.",
       github: "https://github.com/EYoung75/pinpoint_flutter",
-      live: ""
+      live: "",
     },
     {
       name: "WatchList",
       img: require("../assets/watchlist.gif"),
-      description: "A React app that consumes TMDB's Movies and TV API to render details for thousands of movies and tv shows. Designed with a 'mobile first' approach.",
+      description:
+        "A React app that consumes TMDB's Movies and TV API to render details for thousands of movies and tv shows. Designed with a 'mobile first' approach.",
       github: "https://github.com/EYoung75/watchlist",
-      live: "https://movieswatchlister.surge.sh/"
+      live: "https://movieswatchlister.surge.sh/",
     },
     // {
     //   name: "Movie Reviews",
@@ -35,16 +37,17 @@ const Work = () => {
     {
       name: "Misc. Sites",
       img: require("../assets/misc.gif"),
-      description: "A collection of miscellanious, fully responsive sites developed for professional and personal use.",
+      description:
+        "A collection of miscellanious, fully responsive sites developed for professional and personal use.",
       github: "",
       live: "",
-    }
+    },
   ];
   return (
     <div className="work">
       <h2 className="work__title">Latest Projects:</h2>
       <div className="work__projects">
-        {projects.map(project => (
+        {projects.map((project) => (
           <ProjectCard props={project} key={project.name} />
         ))}
       </div>
