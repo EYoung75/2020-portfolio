@@ -18,7 +18,7 @@ const Home = () => {
         <div className="home__hero">
           <h1 className="home__hero__title">Evan Young</h1>
           <div className="home__hero__banner">
-            <h2>Software Developer {"&"} avid adventurer</h2>
+            <h2>Software Engineer {"&"} avid adventurer</h2>
             <hr/>
             <p>
               With a passion for crafting engaging user experiences and coding
