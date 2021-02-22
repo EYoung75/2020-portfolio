@@ -7,10 +7,10 @@ const About = () => {
       {/* <Logo /> */}
       <h1>About</h1>
       <div className="about__bio">
-        <p>I'm a software developer and recent Kansas City transplant.</p>
+        <p>I'm a Software Engineer and recent Kansas City transplant.</p>
         <p>•••</p>
         <p>
-          Before taking on the role of software developer, I have worked various jobs
+          Before taking on the role of software engineer, I have worked various jobs
           ranging from a deckhand out of Juneau, Alaska to serving in the United
           States Navy. This eclectic background provided me with the skills to
           function as an effective team player and the ability to approach
