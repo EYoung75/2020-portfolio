@@ -7,6 +7,8 @@ import {
   } from "react-icons/fa";
   
 const Footer = () => {
+  let date = new Date;
+  date = date.getFullYear();
   return (
     <div className="footer">
       <div className="footer__left">
@@ -25,7 +27,7 @@ const Footer = () => {
       </div>
       <div className="footer__right">
         <h2>&#169; Evan Young</h2>
-        <h2>2020</h2>
+        <h2>{date}</h2>
       </div>
     </div>
   );
