@@ -7,7 +7,7 @@ import {
   } from "react-icons/fa";
   
 const Footer = () => {
-  let date = new Date;
+  let date = new Date();
   date = date.getFullYear();
   return (
     <div className="footer">
