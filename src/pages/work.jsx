@@ -34,14 +34,14 @@ const Work = () => {
     //   github: "https://github.com/EYoung75/movie-reviews",
     //   live: "http://roomy-apparatus.surge.sh/"
     // },
-    {
-      name: "Misc. Sites",
-      img: require("../assets/misc.gif"),
-      description:
-        "A collection of miscellanious, fully responsive sites developed for professional and personal use.",
-      github: "",
-      live: "",
-    },
+    // {
+    //   name: "Misc. Sites",
+    //   img: require("../assets/misc.gif"),
+    //   description:
+    //     "A collection of miscellanious, fully responsive sites developed for professional and personal use.",
+    //   github: "",
+    //   live: "",
+    // },
   ];
   return (
     <div className="work">
